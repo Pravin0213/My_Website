@@ -1,0 +1,18 @@
+<!-- templates/projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-800 flex flex-col items-center justify-center min-h-screen">
+    <h1 class="text-3xl text-white font-bold mb-3">My Projects</h1>
+    
+    <div class="flex flex-row  gap-4 md:gap-10 mt-10 mx-auto">
+        <a href="{{ url_for('recognizer') }}" class="bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition duration-300">Hnad written Digit Recognizer</a>
+        <a href="{{ url_for('recognizer') }}" target="_blank" class="bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition duration-300">Coming soon</a>
+        <a href="{{ url_for('recognizer') }}" target="_blank" class="bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition duration-300">Coming soon</a>
+    </div>    
+</body>
+</html>

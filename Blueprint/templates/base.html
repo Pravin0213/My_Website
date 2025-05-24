@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My App{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 min-h-screen text-gray-100 font-sans">
+    <div class="flex flex-col md:flex-row max-w-5xl mx-auto mt-10 gap-8">
+        <!-- Sidebar Buttons -->
+        <div class="flex flex-row md:flex-col gap-4 md:gap-10 md:w-56 mt-10">
+            <a href="{{ url_for('projects') }}" class="bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition duration-300">Projects</a>
+            <a href="https://github.com/Pravin0213" target="_blank" class="bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition duration-300">GitHub</a>
+            <a href="https://www.linkedin.com/in/praveen-reddy-bobbali-0213" target="_blank" class="bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition duration-300">LinkedIn</a>
+        </div>
+    
+    <nav class="bg-gray-800 shadow-lg rounded-lg mx-auto mt-10 w-full max-w-3xl px-8 py-6">
+        <h1 class="text-3xl font-extrabold text-center text-white mb-4">
+            Hello, I'm Praveen 👋
+        </h1>
+        <p class="text-gray-300 text-lg leading-relaxed text-justify">
+            I currently work as a <span class="font-semibold text-white">Quantitative Risk Analyst</span> in the energy sector.
+            What does that mean? I measure the risk of fire incidents in process facilities in case of leaks.
+        </p>
+
+        <p class="text-gray-300 text-lg leading-relaxed text-justify mt-4">
+            How do I measure risk? I run hundreds or even thousands of computational fluid dynamics (CFD) simulations and
+            aggregate the results. In addition to that, I assess how structures behave under fire exposure, estimate ship
+            collision probabilities with offshore installations, and develop web-based simulation applications.
+        </p>
+
+        <p class="text-gray-300 text-lg leading-relaxed text-justify mt-4">
+            With the growing usage of <span class="font-semibold text-white">Artificial Intelligence</span> in various fields,
+            Firstly, I am surpised by how good AI has become at solving problems and then I got scared that it might take over my job soon.
+            This made me curious about how does AI works? I wanted to learn about this tech to really comprehend the true potential of AI.
+        </p>
+        <p class="text-gray-300 text-lg leading-relaxed text-justify mt-4">
+            So, I started to explore the core mathematical concepts behind Nerual Networks. During this learning, I started working on projects
+            to use this knowledge in practice. I thought it would be cool to show how this projects work on a web. So, I also started exploring
+            <span class="font-semibold text-white">Web Development</span> technologies like Flask, HTML, CSS, and JavaScript to build a website.
+        <p class="text-gray-300 text-lg leading-relaxed text-justify mt-4">
+            This website serves as my personal space to document and share the projects I'm building while learning these technologies.
+        </p>
+    </nav>
+    
+</body>
+</html>

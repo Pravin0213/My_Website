@@ -1,0 +1,30 @@
+
+from flask import Flask , render_template
+from Digit_recognizer import recognizer_bp  # import blueprint from recognizer/__init__.py
+
+app = Flask(__name__)
+
+# Register blueprints
+app.register_blueprint(recognizer_bp, url_prefix="/recognizer")
+
+
+
+# Default route to main page
+@app.route("/")
+def home():
+    return render_template('base.html')
+
+
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
+
+@app.route('/projects/recognizer')
+def recognizer():
+    return render_template('recognizer/recognizer.html')
+
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
