@@ -12,18 +12,17 @@ app.register_blueprint(recognizer_bp, url_prefix="/recognizer")
 # Default route to main page
 @app.route("/")
 def home():
-    return render_template('base.html')
+    return render_template('Home_page.html')
 
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html')
+    return render_template('Projects_page.html')
 
 
-@app.route('/projects/recognizer')
+@app.route('/projects/digit_recognizer')
 def recognizer():
-    return render_template('recognizer/recognizer.html')
-
+    return render_template('Digit_recognizer/recognizer.html')
 
 
 if __name__ == "__main__":
