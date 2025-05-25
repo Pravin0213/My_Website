@@ -13,28 +13,32 @@
 
 
 <body class="bg-gray-800 flex flex-col items-center justify-center min-h-screen">
-  <h1 class="text-3xl text-white font-bold mb-4">Handwritten Digit Recognition</h1>
+  <div class="w-full text-center">
+    <h1 class="text-3xl text-white font-bold mb-4">Handwritten Digit Recognition</h1>
+  </div>
   <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
 
 
-    <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 mb-4 items-center">
-
-      <div id="canvasContainer" class="mb-4"></div>
-      <div id="previewContainer" style="margin-top: 20px;"></div>
-      <div class = "flex flex-col items-center md:w-[250px]">
-        <div id="prediction" class="text-lg text-white text-center"></div>
-        <canvas id="confidenceChart" width="250" height="250"></canvas>
-      </div>
+<!-- Group canvas, preview and chart -->
+  <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 mb-4 items-center justify-center">
+    <div id="canvasContainer" class="max-w-full overflow-hidden"></div>
+    <div id="previewContainer" class="flex justify-center"></div>
+    <div class="flex flex-col items-center">
+      <div id="prediction" class="text-lg text-white text-center mb-2"></div>
+      <canvas id="confidenceChart" width="250" height="250"></canvas>
     </div>
+  </div>
 
-    <div class="flex space-x-4 mb-4">
-      <button id="predictButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Predict Digit
-      </button>
-      <button id="clearButton" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-        Clear Canvas
-      </button>
-    </div>
+  <!-- Button group below the whole section -->
+  <div class="flex space-x-4 mb-4 justify-center">
+    <button id="predictButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Predict Digit
+    </button>
+    <button id="clearButton" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+      Clear Canvas
+    </button>
+  </div>
+
     
   </div>
 </body>
