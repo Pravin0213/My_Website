@@ -1,6 +1,6 @@
 
 from flask import Flask , render_template
-from Digit_recognizer import recognizer_bp  # import blueprint from recognizer/__init__.py
+from Blueprint.Digit_recognizer import recognizer_bp  # import blueprint from recognizer/__init__.py
 
 app = Flask(__name__)
 
